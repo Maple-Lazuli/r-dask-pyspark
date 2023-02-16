@@ -1,0 +1,20 @@
+---
+title: "Decision Tree in R"
+author: "Ada Lazuli"
+date: "2023-02-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loading
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+df <- read.csv("../data/rba-dataset.csv")
+```
