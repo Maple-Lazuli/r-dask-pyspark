@@ -12,9 +12,15 @@ knitr::opts_chunk$set(echo = TRUE)
 # Loading
 
 ```{r}
-library(tidyverse)
+library(DT)
+library(tidymodels)
+library("ggfortify")
+library(rattle)
 ```
 
 ```{r}
-df <- read.csv("../data/rba-dataset.csv")
+df <- read.csv("../data/rba-dataset.csv", nrows = 500000)
+
+datatable(df)
 ```
+
